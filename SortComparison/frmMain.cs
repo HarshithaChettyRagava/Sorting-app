@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using System.Collections;
+using System.IO;
 
 namespace SortComparison
 {
@@ -24,12 +25,22 @@ namespace SortComparison
 
         public frmMain()
         {
+            string path = System.AppDomain.CurrentDomain.BaseDirectory.ToString()+"\\output";
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.tbSamples.Value = 10;
+            this.cboAlg1.SelectedIndex = 3;
+            this.cboAlg2.SelectedIndex = 12;
+
+            this.cmdShuffle.PerformClick();
         }
 
         public void Randomize(IList list)

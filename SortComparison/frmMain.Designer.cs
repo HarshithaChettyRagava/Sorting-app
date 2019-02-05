@@ -20,11 +20,14 @@
             base.Dispose(disposing);
         }
 
-        //private void InitializeOutputFolder() 
-        //{
-             //return System.CurrentDomain.BaseDirectory.ToString() + "\\output";
-        //}
+        private string InitializeOutputFolder() 
+        {
+             //return System.AppDomain.CurrentDomain.BaseDirectory.ToString() + "\\output";
+            return System.AppDomain.CurrentDomain.BaseDirectory.ToString()+"\\output";
+        }
 
+
+        
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -58,6 +61,7 @@
             // 
             // cboAlg1
             // 
+            //this.cboAlg1.BackColor = System.Drawing.Color.LightGreen;
             this.cboAlg1.FormattingEnabled = true;
             this.cboAlg1.Items.AddRange(new object[] {
             "",
@@ -78,12 +82,12 @@
             "Shell Sort"});
             this.cboAlg1.Location = new System.Drawing.Point(13, 220);
             this.cboAlg1.Name = "cboAlg1";
-            this.cboAlg1.BackColor=System.Drawing.Color.LightGreen;
             this.cboAlg1.Size = new System.Drawing.Size(200, 21);
             this.cboAlg1.TabIndex = 2;
             // 
             // cboAlg2
             // 
+           // this.cboAlg2.BackColor = System.Drawing.Color.LightGreen;
             this.cboAlg2.FormattingEnabled = true;
             this.cboAlg2.Items.AddRange(new object[] {
             "",
@@ -104,7 +108,6 @@
             "Shell Sort"});
             this.cboAlg2.Location = new System.Drawing.Point(219, 220);
             this.cboAlg2.Name = "cboAlg2";
-            this.cboAlg2.BackColor=System.Drawing.Color.LightGreen;
             this.cboAlg2.Size = new System.Drawing.Size(200, 21);
             this.cboAlg2.TabIndex = 3;
             // 
@@ -120,14 +123,14 @@
             // 
             // cmdSort
             // 
+            //this.cmdSort.BackColor = System.Drawing.Color.Salmon;
+            //this.cmdSort.ForeColor = System.Drawing.Color.Red;
             this.cmdSort.Location = new System.Drawing.Point(344, 257);
             this.cmdSort.Name = "cmdSort";
             this.cmdSort.Size = new System.Drawing.Size(75, 23);
             this.cmdSort.TabIndex = 5;
             this.cmdSort.Text = "Sort";
-            this.cmdSort.ForeColor= System.Drawing.Color.Red;
-            this.cmdSort.BackColor= System.Drawing.Color.Black;
-            this.cmdSort.UseVisualStyleBackColor = true;
+            this.cmdSort.UseVisualStyleBackColor = false;
             this.cmdSort.Click += new System.EventHandler(this.cmdSort_Click);
             // 
             // pnlSort1
@@ -235,15 +238,7 @@
             this.txtOutputFolder.Name = "txtOutputFolder";
             this.txtOutputFolder.Size = new System.Drawing.Size(215, 20);
             this.txtOutputFolder.TabIndex = 16;
-            //
-            //string s = AppDomain.CurrentDomain.BaseDirectory.ToString();
-            //
-           // this.txtOutputFolder.Text = AppDomain.CurrentDomain.BaseDirectory.ToString();
-            //this.txtOutputFolder.Text = Assembly.GetExecutingAssembly().CodeBase;
-            this.txtOutputFolder.Text = "C:\\Sort";
-            
-
-            
+            this.txtOutputFolder.Text = InitializeOutputFolder();
             // 
             // label4
             // 
