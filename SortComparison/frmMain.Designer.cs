@@ -61,7 +61,7 @@
             // 
             // cboAlg1
             // 
-            //this.cboAlg1.BackColor = System.Drawing.Color.LightGreen;
+            this.cboAlg1.BackColor = System.Drawing.Color.LightGreen;
             this.cboAlg1.FormattingEnabled = true;
             this.cboAlg1.Items.AddRange(new object[] {
             "",
@@ -87,7 +87,7 @@
             // 
             // cboAlg2
             // 
-           // this.cboAlg2.BackColor = System.Drawing.Color.LightGreen;
+            this.cboAlg2.BackColor = System.Drawing.Color.LightGreen;
             this.cboAlg2.FormattingEnabled = true;
             this.cboAlg2.Items.AddRange(new object[] {
             "",
@@ -123,8 +123,8 @@
             // 
             // cmdSort
             // 
-            //this.cmdSort.BackColor = System.Drawing.Color.Salmon;
-            //this.cmdSort.ForeColor = System.Drawing.Color.Red;
+            this.cmdSort.BackColor = System.Drawing.Color.Salmon;
+            this.cmdSort.ForeColor = System.Drawing.Color.Red;
             this.cmdSort.Location = new System.Drawing.Point(344, 257);
             this.cmdSort.Name = "cmdSort";
             this.cmdSort.Size = new System.Drawing.Size(75, 23);
