@@ -1,3 +1,4 @@
+## Please find answers below for the questions 1-15
 1. Bucket sort
 2. Program.cs and static void Main()
 3. frmMain
@@ -11,3 +12,9 @@
 8. cboAlg2 is right combo box
 11. cmdShuffle is shuffle button.
 12. cmd.Sort is sort button.
+
+
+## Extra changes we did to this code
+- We changed the two combo boxes color to light green
+- We changed the sort button text color to red and backcolor to salmon
+- We added a chunk of code to create output folder in base directory instead of creating in manually
